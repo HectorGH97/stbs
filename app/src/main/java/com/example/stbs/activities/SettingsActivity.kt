@@ -26,20 +26,26 @@ class SettingsActivity : AppCompatActivity() {
 
         welcome_user.text = "Welcome $current_mail"
 
-        change_pwd_btn.setOnClickListener {
-            auth.sendPasswordResetEmail(current_mail.toString())
-            Toast.makeText(this,"A mail to change password has been sent to $current_mail",Toast.LENGTH_LONG).show()
-        }
+        change_pwd_btn.setOnClickListener { changePwd() }
 
-        logout_btn.setOnClickListener {
-            auth.signOut().also {
-                startActivity(Intent(this,LoginActivity::class.java))
-            }
-        }
+        logout_btn.setOnClickListener { signOut() }
 
-        settings_back_btn.setOnClickListener {
-            onBackPressed()
-        }
+        settings_back_btn.setOnClickListener { pressBack() }
 
+    }
+
+    private fun pressBack(){
+        onBackPressed()
+    }
+
+    private fun signOut(){
+        auth.signOut().also {
+            startActivity(Intent(this,LoginActivity::class.java))
+        }
+    }
+
+    private fun changePwd(){
+        auth.sendPasswordResetEmail(current_mail.toString())
+        Toast.makeText(this,"A mail to change password has been sent to $current_mail",Toast.LENGTH_LONG).show()
     }
 }
