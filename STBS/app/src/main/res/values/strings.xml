@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">STBS</string>
-    <string name="new_chat">New Chat</string>
-    <string name="type_your_message">Type your message</string>
-    <string name="send">Send</string>
-    <string name="back">Back</string>
-</resources>
