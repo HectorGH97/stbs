@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Users/consultant/Desktop/stbs/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_list_of_chats.xml",
+        "source": "/Users/consultant/Desktop/stbs/app/src/main/res/layout/activity_list_of_chats.xml"
+    },
+    {
+        "merged": "/Users/consultant/Desktop/stbs/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_chat.xml",
+        "source": "/Users/consultant/Desktop/stbs/app/src/main/res/layout/item_chat.xml"
+    },
+    {
+        "merged": "/Users/consultant/Desktop/stbs/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_chat.xml",
+        "source": "/Users/consultant/Desktop/stbs/app/src/main/res/layout/activity_chat.xml"
+    },
+    {
+        "merged": "/Users/consultant/Desktop/stbs/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_message.xml",
+        "source": "/Users/consultant/Desktop/stbs/app/src/main/res/layout/item_message.xml"
+    },
+    {
+        "merged": "/Users/consultant/Desktop/stbs/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_settings.xml",
+        "source": "/Users/consultant/Desktop/stbs/app/src/main/res/layout/activity_settings.xml"
+    },
+    {
+        "merged": "/Users/consultant/Desktop/stbs/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_login.xml",
+        "source": "/Users/consultant/Desktop/stbs/app/src/main/res/layout/activity_login.xml"
+    }
+]
