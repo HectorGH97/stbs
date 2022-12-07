@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/consultant/Desktop/stbs/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-eu/values-eu.xml",
+            "outputFile": "/Users/consultant/Desktop/stbs2/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-eu/values-eu.xml",
             "map": [
                 {
                     "source": "/Users/consultant/.gradle/caches/transforms-2/files-2.1/b854c2806df21d42e3a791422503a9dd/appcompat-1.2.0/res/values-eu/values-eu.xml",

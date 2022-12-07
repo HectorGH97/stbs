@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.stbs.models.Chat
 import com.example.stbs.adapters.ChatAdapter
@@ -37,7 +38,13 @@ class ListOfChatsActivity : AppCompatActivity() {
     }
 
     private fun initViews(){
-        newChatButton.setOnClickListener { newChat() }
+        binding.newChatButton.setOnClickListener {
+            if (binding.newChatText.text.toString() != "") {
+                newChat()
+            }else{
+                Toast.makeText(this, "Please enter a email to start chatting",Toast.LENGTH_LONG).show()
+            }
+        }
 
         binding.listChatsRecyclerView.layoutManager = LinearLayoutManager(this)
         binding.listChatsRecyclerView.adapter =
@@ -54,7 +61,7 @@ class ListOfChatsActivity : AppCompatActivity() {
             .addOnSuccessListener { chats ->
                 val listChats = chats.toObjects(Chat::class.java)
 
-                (listChatsRecyclerView.adapter as ChatAdapter).setData(listChats)
+                (binding.listChatsRecyclerView.adapter as ChatAdapter).setData(listChats)
             }
 
         userRef.collection("chats")
@@ -63,7 +70,7 @@ class ListOfChatsActivity : AppCompatActivity() {
                     chats?.let {
                         val listChats = it.toObjects(Chat::class.java)
 
-                        (listChatsRecyclerView.adapter as ChatAdapter).setData(listChats)
+                        (binding.listChatsRecyclerView.adapter as ChatAdapter).setData(listChats)
                     }
                 }
             }

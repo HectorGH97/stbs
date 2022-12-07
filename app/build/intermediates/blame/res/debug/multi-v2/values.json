@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/consultant/Desktop/stbs/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/Users/consultant/Desktop/stbs2/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
                     "source": "/Users/consultant/.gradle/caches/transforms-2/files-2.1/dd69face01b62a37b3cb9ad97d8c6b1b/transition-1.2.0/res/values/values.xml",
@@ -78,23 +78,6 @@
                     }
                 },
                 {
-                    "source": "/Users/consultant/Desktop/stbs/app/build/generated/res/google-services/debug/values/values.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "55,199,281,385,494,614,708",
-                        "endColumns": "143,81,103,108,119,93,70",
-                        "endOffsets": "194,276,380,489,609,703,774"
-                    },
-                    "to": {
-                        "startLines": "1136,1141,1142,1143,1144,1145,1210",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "68717,69329,69411,69515,69624,69744,80342",
-                        "endColumns": "143,81,103,108,119,93,70",
-                        "endOffsets": "68856,69406,69510,69619,69739,69833,80408"
-                    }
-                },
-                {
                     "source": "/Users/consultant/.gradle/caches/transforms-2/files-2.1/e265c6e914430b52ea9bdce0e7bf852c/jetified-viewpager2-1.0.0/res/values/values.xml",
                     "from": {
                         "startLines": "2",
@@ -114,20 +97,39 @@
                     }
                 },
                 {
-                    "source": "/Users/consultant/Desktop/stbs/app/src/main/res/values/colors.xml",
+                    "source": "/Users/consultant/Desktop/stbs2/app/build/generated/res/google-services/debug/values/values.xml",
                     "from": {
-                        "startLines": "4,2,3,6,5",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "153,55,102,238,199",
-                        "endColumns": "45,46,50,40,38",
-                        "endOffsets": "194,97,148,274,233"
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,199,281,385,494,614,708",
+                        "endColumns": "143,81,103,108,119,93,70",
+                        "endOffsets": "194,276,380,489,609,703,774"
                     },
                     "to": {
-                        "startLines": "429,430,431,507,528",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "21139,21185,21232,26427,27874",
-                        "endColumns": "45,46,50,40,38",
-                        "endOffsets": "21180,21227,21278,26463,27908"
+                        "startLines": "1136,1141,1142,1143,1144,1145,1210",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "68717,69329,69411,69515,69624,69744,80342",
+                        "endColumns": "143,81,103,108,119,93,70",
+                        "endOffsets": "68856,69406,69510,69619,69739,69833,80408"
+                    }
+                },
+                {
+                    "source": "/Users/consultant/Desktop/stbs2/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "53",
+                        "endLines": "7",
+                        "endColumns": "12",
+                        "endOffsets": "367"
+                    },
+                    "to": {
+                        "startLines": "1231",
+                        "startColumns": "4",
+                        "startOffsets": "81777",
+                        "endLines": "1236",
+                        "endColumns": "12",
+                        "endOffsets": "82091"
                     }
                 },
                 {
@@ -188,23 +190,6 @@
                     }
                 },
                 {
-                    "source": "/Users/consultant/Desktop/stbs/app/src/main/res/values/strings.xml",
-                    "from": {
-                        "startLines": "1,5,2,4,3",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "16,206,58,168,104",
-                        "endColumns": "41,37,45,37,63",
-                        "endOffsets": "53,239,99,201,163"
-                    },
-                    "to": {
-                        "startLines": "1108,1110,1204,1212,1214",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "65360,65552,79494,80466,80575",
-                        "endColumns": "41,37,45,37,63",
-                        "endOffsets": "65397,65585,79535,80499,80634"
-                    }
-                },
-                {
                     "source": "/Users/consultant/.gradle/caches/transforms-2/files-2.1/3af823cd3e9c0e385f47a93c9432f50e/jetified-play-services-basement-17.0.0/res/values/values.xml",
                     "from": {
                         "startLines": "4,7",
@@ -241,22 +226,37 @@
                     }
                 },
                 {
-                    "source": "/Users/consultant/Desktop/stbs/app/src/main/res/values/styles.xml",
+                    "source": "/Users/consultant/Desktop/stbs2/app/src/main/res/values/colors.xml",
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "53",
-                        "endLines": "7",
-                        "endColumns": "12",
-                        "endOffsets": "367"
+                        "startLines": "4,2,3,6,5",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "153,55,102,238,199",
+                        "endColumns": "45,46,50,40,38",
+                        "endOffsets": "194,97,148,274,233"
                     },
                     "to": {
-                        "startLines": "1231",
-                        "startColumns": "4",
-                        "startOffsets": "81777",
-                        "endLines": "1236",
-                        "endColumns": "12",
-                        "endOffsets": "82091"
+                        "startLines": "429,430,431,507,528",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "21139,21185,21232,26427,27874",
+                        "endColumns": "45,46,50,40,38",
+                        "endOffsets": "21180,21227,21278,26463,27908"
+                    }
+                },
+                {
+                    "source": "/Users/consultant/Desktop/stbs2/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "1,5,2,4,3",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "16,206,58,168,104",
+                        "endColumns": "41,37,45,37,63",
+                        "endOffsets": "53,239,99,201,163"
+                    },
+                    "to": {
+                        "startLines": "1108,1110,1204,1212,1214",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "65360,65552,79494,80466,80575",
+                        "endColumns": "41,37,45,37,63",
+                        "endOffsets": "65397,65585,79535,80499,80634"
                     }
                 },
                 {

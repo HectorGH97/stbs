@@ -1,9 +1,9 @@
-#Wed Dec 07 11:54:30 CST 2022
-base.2=/Users/consultant/Desktop/stbs/app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
+#Wed Dec 07 12:21:19 CST 2022
+base.2=/Users/consultant/Desktop/stbs2/app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
 path.2=classes2.dex
-base.1=/Users/consultant/Desktop/stbs/app/build/intermediates/dex/debug/mergeProjectDexDebug/classes.dex
+base.1=/Users/consultant/Desktop/stbs2/app/build/intermediates/dex/debug/mergeProjectDexDebug/classes.dex
 path.1=classes.dex
-base.0=/Users/consultant/Desktop/stbs/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+base.0=/Users/consultant/Desktop/stbs2/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
