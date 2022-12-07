@@ -7,6 +7,7 @@ import android.util.Log
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.stbs.R
 import com.example.stbs.adapters.MessageAdapter
+import com.example.stbs.databinding.ActivityChatBinding
 import com.example.stbs.models.Message
 import com.google.firebase.firestore.Query
 import com.google.firebase.firestore.ktx.firestore
@@ -22,9 +23,13 @@ class ChatActivity : AppCompatActivity() {
 
     private var db = Firebase.firestore
 
+    private val binding by lazy{
+        ActivityChatBinding.inflate(layoutInflater)
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_chat)
+        setContentView(binding.root)
 
         intent.getStringExtra("chatId")?.let { chatId = it }
         intent.getStringExtra("user")?.let { user = it }
@@ -45,15 +50,14 @@ class ChatActivity : AppCompatActivity() {
         messagesRecylerView.layoutManager = LinearLayoutManager(this)
         messagesRecylerView.adapter = MessageAdapter(user)
 
-        chat_name.text = name
+        binding.chatName.text = name
 
-        chat_back_btn.setOnClickListener {
+        binding.chatBackBtn.setOnClickListener {
             onBackPressed()
         }
 
-
         Log.d(TAG, "initViews: ${db.collection("chats").document(chatId).path}")
-        sendMessageButton.setOnClickListener { sendMessage() }
+        binding.sendMessageButton.setOnClickListener { sendMessage() }
 
         val chatRef = db.collection("chats").document(chatId)
 
@@ -78,15 +82,13 @@ class ChatActivity : AppCompatActivity() {
 
     private fun sendMessage(){
         val message = Message(
-            message = messageTextField.text.toString(),
+            message = binding.messageTextField.text.toString(),
             from = user
         )
         Log.d(TAG, "sendMessage: sent $message")
         var messageDB = db.collection("chats").document(chatId).collection("messages").document().set(message)
-
         Log.d(TAG, "sendMessage: $messageDB ")
-
-        messageTextField.setText("")
+        binding.messageTextField.setText("")
 
     }
 }

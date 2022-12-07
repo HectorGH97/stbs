@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.stbs.models.Chat
 import com.example.stbs.adapters.ChatAdapter
 import com.example.stbs.R
+import com.example.stbs.databinding.ActivityListOfChatsBinding
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_list_of_chats.*
@@ -20,9 +21,13 @@ class ListOfChatsActivity : AppCompatActivity() {
 
     private var db = Firebase.firestore
 
+    private val binding by lazy{
+        ActivityListOfChatsBinding.inflate(layoutInflater)
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_list_of_chats)
+        setContentView(binding.root)
 
         intent.getStringExtra("user")?.let { user = it }
 
@@ -34,8 +39,8 @@ class ListOfChatsActivity : AppCompatActivity() {
     private fun initViews(){
         newChatButton.setOnClickListener { newChat() }
 
-        listChatsRecyclerView.layoutManager = LinearLayoutManager(this)
-        listChatsRecyclerView.adapter =
+        binding.listChatsRecyclerView.layoutManager = LinearLayoutManager(this)
+        binding.listChatsRecyclerView.adapter =
             ChatAdapter { chat ->
                 chatSelected(chat)
             }
@@ -63,7 +68,7 @@ class ListOfChatsActivity : AppCompatActivity() {
                 }
             }
 
-        settings_btn.setOnClickListener{
+        binding.settingsBtn.setOnClickListener{
             startActivity(Intent(this, SettingsActivity::class.java))
         }
     }
@@ -78,7 +83,7 @@ class ListOfChatsActivity : AppCompatActivity() {
 
     private fun newChat(){
         val chatId = UUID.randomUUID().toString()
-        val otherUser = newChatText.text.toString()
+        val otherUser = binding.newChatText.text.toString()
         val users = listOf(user, otherUser)
         val chat_name = "Chat with $user & $otherUser"
         val chat = Chat(

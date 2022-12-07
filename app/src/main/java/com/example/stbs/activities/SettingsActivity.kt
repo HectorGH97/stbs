@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import com.example.stbs.R
+import com.example.stbs.databinding.ActivitySettingsBinding
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_settings.*
@@ -18,19 +19,23 @@ class SettingsActivity : AppCompatActivity() {
 
     private val current_mail = auth.currentUser?.email
 
+    private val binding by lazy{
+        ActivitySettingsBinding.inflate(layoutInflater)
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_settings)
+        setContentView(binding.root)
 
         Log.d(TAG, "onCreate: hello $current_mail")
 
-        welcome_user.text = "Welcome $current_mail"
+        binding.welcomeUser.text = "Welcome $current_mail"
 
-        change_pwd_btn.setOnClickListener { changePwd() }
+        binding.changePwdBtn.setOnClickListener { changePwd() }
 
-        logout_btn.setOnClickListener { signOut() }
+        binding.logoutBtn.setOnClickListener { signOut() }
 
-        settings_back_btn.setOnClickListener { pressBack() }
+        binding.settingsBackBtn.setOnClickListener { pressBack() }
 
     }
 

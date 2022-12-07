@@ -6,6 +6,7 @@ import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.stbs.R
+import com.example.stbs.databinding.ActivityLoginBinding
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_login.*
@@ -15,12 +16,16 @@ class LoginActivity : AppCompatActivity() {
 
     private val auth = Firebase.auth
 
+    private val binding by lazy{
+        ActivityLoginBinding.inflate(layoutInflater)
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
+        setContentView(binding.root)
 
-        loginButton.setOnClickListener { loginUser() }
-        createButton.setOnClickListener { createUser() }
+        binding.loginButton.setOnClickListener { loginUser() }
+        binding.createButton.setOnClickListener { createUser() }
 
         checkUser()
     }
